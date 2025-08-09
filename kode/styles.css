@@ -1,0 +1,229 @@
+/*! Global styles */
+:root{
+    --main-color-webstudio: #2E2F42;
+    --benefits-text-color: #434455; /*and portfolio main text color*/
+    --font-family: "Raleway", sans-serif;
+}
+
+/*!page*/
+.page{ 
+    font-family: var(--font-family);
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    --navy-blue-color: #2E2F42;
+    --slate-color: #434455;
+    --iris-color: #4D5AE5;
+    --white-color:#FFFFFF;
+    --cloud-color: #F4F4FD;
+    --cornflower-color:#E7E9FC;
+    --ocean-color: #404BBF;
+} 
+/*!reset*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    margin: 0;
+    padding: 0;
+}
+ul,ol,a{
+    color: var(--navy-blue-color);
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.Services-ul{
+    display: flex;
+}
+.address{
+    font-style: normal;
+}
+/*!reset end*/
+
+/*!container*/
+.container {
+    width: 1100px;
+    margin: 0 auto;
+    padding-left: 15px ;
+    
+    outline-offset: -2px;
+    outline: 2px  solid red;
+}
+/*!header *
+
+/*!logo start*/
+.webstudio-logo{
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 117%;
+    text-transform: uppercase;
+}
+.logo-web {
+    color: var(--iris-color);
+}
+.logo-dark {
+    color: #2E2F42;
+}
+.logo-light {
+    color: var(--white-color);
+}
+/*!logo end*/
+/*!contact */
+.contact {
+    font-weight: 400;
+    color: #2E2F42;
+    font-style: normal;
+}
+/*!Hero */
+.Hero{
+    height: 600px;
+    background-color: var(--main-color-webstudio);
+    display:block;
+    color: var(--white-color);
+}
+    
+.hero-h1 {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 107%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    padding: 120px 0 49px 0;
+}
+/*!hero button*/
+.hero-btn {
+    width: 169px;
+    height: 56px;
+    margin: 0 auto;
+    display: block;
+    color: var(--white-color);
+    background-color: var(--ocean-color);
+    transition: 2s;        
+    border: 4px solid var(--cornflower-color);  
+    border-radius: 90px; 
+    margin-bottom: 60px;
+}
+.hero-btn:hover {
+    background-color: #404BBF;
+    color: #F4F4FD;
+    border-radius: 90px;
+    transition: 0,5s;
+    cursor: pointer;
+}
+/*!what are we doing*/
+.Services-h3{
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 72px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 111%;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+.whatarewedoing-accent{
+    color:#4D5AE5
+}
+/*!Our Team*/
+.ourteam {
+    margin-top: 60px;;
+    background-color: var(--cloud-color);
+}
+.text-ourteam {
+    padding: 60px 0 60px 0;
+    text-align: center;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 111%;
+    letter-spacing: 0.02em;
+    color: var(--main-color-webstudio);
+}
+.ourteam-h3{
+    font-weight:700;
+    font-size: 36px;
+    line-height: 111%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2E2F42;
+}
+
+/*!footer*/
+.footer {
+    display: flex;
+    flex-direction: column;;
+    margin: 0 auto;
+    background-color: var(--navy-blue-color);
+    color: var(--cloud-color); 
+    }
+/*!footer logo and background*/
+.logo{
+
+    color:#4D5AE5 ;
+}
+.logo-footer{
+    font-style: italic;
+    color: #F4F4FD;
+}
+.footer-p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+/*!footer end*/
+/*! Portfolio */
+.text-h3 {
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    color: #2E2F42
+}
+.text-paragraph {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em; 
+    color: #2E2F42;
+}
+/*!Portfolio Filter */
+.portfolio-filter{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+}
+/*!Buttons */
+/*!buttons seting*/
+.button-all
+{
+    background-color: #F4F4FD;
+    color: #4D5AE5;
+    display: block;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center; 
+    border: 1px solid #E7E9FC; 
+    transition: 1s;   
+    border-radius: 2px solid #1d32ef;
+}
+/*!Button Hover Effects */
+.button-hover:hover {
+    background-color: #404BBF;
+    color: #F4F4FD;
+    cursor: pointer;
+    border-radius: 90%;
+    transition: 1s;
+} 
+/*!button hover end*/
+/*!Team Member */
+.portfolio-item {   
+    width: 360px;
+    height: 300px;
+}
