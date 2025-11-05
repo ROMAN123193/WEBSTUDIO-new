@@ -39,7 +39,6 @@ ul,ol,a{
     color: var(--navy-blue-color);
     text-decoration: none;
     list-style: none;
-    margin: 0;
     padding: 0;
 }
 .header-list{
@@ -49,11 +48,13 @@ ul,ol,a{
 *                      container page                    *
 *********************************************************/
 
-.container {
-    width: 1158px;
+.container{
+    max-width: 1158px;
+    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
+    box-sizing: border-box;
     outline-offset: -2px;
     outline: 2px solid red;
 }
@@ -62,20 +63,18 @@ ul,ol,a{
 | Header Styles                                           |
 +=========================================================*/
 /*header`s container*/
-.header{
+.header {
     width: 100%;
-    border-bottom: 1px solid var(--cornflower-color); /* сіра лінія */
+    border-bottom: 1px solid var(--cornflower-color);
 }
 .header-container {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1158px;
-    margin: 0 auto;
-    padding: 12px ;
-    align-items: center;
-    height: 60px;
-    
-}
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 1158px;
+        margin: 0 auto;
+        }
 
 /* logo */
 .webstudio-logo {
@@ -88,9 +87,9 @@ ul,ol,a{
     text-decoration: none;
     margin: 0;
 }
-.page-logo img{
+/*.page-logo img{
 
-}
+}*/
 /* header`s list */
 .header-list {
     display: flex;
@@ -135,7 +134,8 @@ ul,ol,a{
     align-items: center;
     justify-content: center;
     color: var(--white-color);
-    padding: 60px 15px;
+    
+    padding: 0 15px;
 
 }
     
@@ -285,14 +285,17 @@ ul,ol,a{
 /*=========================================================+
 | Portfolio Styles                                      |
 +=========================================================*/
+/*РАМКИ НАВКОЛО КАРТ*/
+/*.{
+    border: 36px 16px;
+    border: 1px #434455 solid;
+}*/
 .flex-portfolio {
     display: flex;
     flex-wrap: wrap;
+
     justify-content: space-between;
     gap:  120px 15px;
-}
-.portfolio-item{
-
 }
 .portfolio-filter{
     margin-bottom: 120px;
@@ -361,5 +364,4 @@ ul,ol,a{
 /*!Team Member */
 .portfolio-item {   
     width: 360px;
-    height: 300px;
 }

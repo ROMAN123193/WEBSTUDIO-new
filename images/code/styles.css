@@ -67,9 +67,10 @@ ul,ol,a{
     border-bottom: 1px solid var(--cornflower-color); /* сіра лінія */
 }
 .header-container {
+    max-width: none;
+    margin: 0;
     display: flex;
     justify-content: space-between;
-    max-width: 1158px;
     margin: 0 auto;
     padding: 12px ;
     align-items: center;
@@ -88,9 +89,9 @@ ul,ol,a{
     text-decoration: none;
     margin: 0;
 }
-.page-logo img{
+/*.page-logo img{
 
-}
+}*/
 /* header`s list */
 .header-list {
     display: flex;
@@ -129,7 +130,7 @@ ul,ol,a{
 /*!Hero */
 .Hero{
     width: 100%;
-    min-height: 450px; /* щоб не стискалось */
+    min-height: 450px;
     background-color: var(--navy-blue-color);
     display: flex;
     align-items: center;
@@ -147,6 +148,7 @@ ul,ol,a{
     text-align: center;
     padding: 60px 0 49px 0;
 }
+
 /*!hero button*/
 .hero-btn {
     width: 169px;
@@ -156,7 +158,7 @@ ul,ol,a{
     color: var(--white-color);
     background-color: var(--ocean-color);
     transition: 2s;        
-    border: 4px solid var(--cornflower-color);  
+    border: 3px solid var(--cornflower-color);  
 }
 .hero-btn:hover {
     background-color: #404BBF;
@@ -285,14 +287,16 @@ ul,ol,a{
 /*=========================================================+
 | Portfolio Styles                                      |
 +=========================================================*/
+.border{
+    padding:24px 28px;
+    border: 1px solid #E7E9FC;
+    border-top: none;
+}
 .flex-portfolio {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap:  120px 15px;
-}
-.portfolio-item{
-
 }
 .portfolio-filter{
     margin-bottom: 120px;
@@ -347,6 +351,15 @@ ul,ol,a{
     transition: 1s;   
     border-radius: 2px solid #1d32ef;
 }
+.button-shadow button:hover {
+    box-shadow: 0 6px 14px rgba(0, 0, 0, .22);
+    transform: translateY(-2px);
+}
+
+.s button:active {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .15);
+    transform: translateY(0);
+}
 /*=========================================================+
 | Button Hover Effects                                 |
 +=========================================================*/
@@ -361,5 +374,9 @@ ul,ol,a{
 /*!Team Member */
 .portfolio-item {   
     width: 360px;
-    height: 300px;
+}
+.display{
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
