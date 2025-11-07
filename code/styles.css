@@ -277,6 +277,12 @@ ul,ol,a{
     border: 1px solid #E7E9FC;
     border-top: none;
     background-color: var(--white-color);
+    text-align: center;
+}
+.social-list{
+    display: flex;
+    align-items: center;
+    gap: 16px;
 }
 /*=========================================================+
 | Customers                                          |
@@ -428,7 +434,7 @@ ul,ol,a{
     background-color: #404BBF;
     color: #F4F4FD;
     cursor: pointer;
-    border-radius: 90%;
+    border-radius: 48%;
     transition: 1s;
 } 
 /*!button hover end*/
