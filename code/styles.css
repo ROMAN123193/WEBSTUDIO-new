@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 :root{
-
+    --light-stale:#8E8F99;
     --benefits-text-color: #434455; /*and portfolio main text color*/
     --font-family: "Raleway", sans-serif;
     --navy-blue-color: #2E2F42;
@@ -55,7 +55,8 @@ ul,ol,a{
     padding-right: 15px;
     margin: 0 auto;
     outline-offset: -2px;
-    outline: 2px solid red;
+    /*
+    outline: 2px solid red;*/
 }
 
 /*=========================================================+
@@ -246,7 +247,6 @@ ul,ol,a{
     line-height: 111%;
     letter-spacing: 0.02em;
     color: var(--main-color-webstudio);
-    
 }
 .ourteam-h3{
     font-weight:700;
@@ -256,7 +256,42 @@ ul,ol,a{
     text-align: center;
     color: var(--navy-blue-color);
 }
+/*=========================================================+
+| Customers                                          |
++=========================================================*/
+.text-customers{
+    padding-top: 120px;
+    padding-bottom: 72px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 111%;
+    letter-spacing: 0.02em;
+    color: var(--main-color-webstudio);
+    font-family: var(--font-family);
 
+}
+.customers{
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+}
+.customers-div {
+    padding-bottom: 120px;
+    justify-content: center;
+    gap: 24px;
+    display: flex;
+    align-items: center;
+}
+.customers-item{
+    padding-left: 32px ;
+    padding-bottom:16px ;
+    padding-right: 32px;
+    padding-top:16px ;
+    border: var(--light-stale) solid 3px;
+    border-radius: 5%;
+    
+}
 
 /*=========================================================+
 | Footer Styles                                          |
