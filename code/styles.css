@@ -168,12 +168,15 @@ ul,ol,a{
     transition: 0,5s;
     cursor: pointer;
 }
-/*!benefits*/
+/*=========================================================+
+| Benefits                                |
++=========================================================*/
 .container-benefits {
     display: flex;
     margin-top: 65px;
-    
+
 }
+
 .benefits-list {
     display: flex;
     justify-content: space-between;
@@ -181,15 +184,28 @@ ul,ol,a{
 }
 
 .benefits-item {
-    flex: 1; 
+    flex: 1;
 }
 
 .benefits-h3 {
-    margin: 0 0 10px 0; 
+    margin: 0 0 10px 0;
 }
 
 .benefits-paragraph {
     margin: 0;
+}
+.benefits-div{
+    background-color: var(--cloud-color);
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-radius: 5%;
+
+}
+.benefits-img{
+    align-items: center;
 }
 /*=========================================================+
 | What Are We Doing Styles                                |
@@ -256,6 +272,12 @@ ul,ol,a{
     text-align: center;
     color: var(--navy-blue-color);
 }
+.border-ourteam{
+    padding: 24px 28px;
+    border: 1px solid #E7E9FC;
+    border-top: none;
+    background-color: var(--white-color);
+}
 /*=========================================================+
 | Customers                                          |
 +=========================================================*/
@@ -290,9 +312,13 @@ ul,ol,a{
     padding-top:16px ;
     border: var(--light-stale) solid 3px;
     border-radius: 5%;
-    
+    transition: 0.3s;
 }
-
+.customers-item:hover {
+    
+    border-color: #4D5AE5;
+    filter: brightness(0) saturate(100%) invert(37%) sepia(62%) saturate(1968%) hue-rotate(222deg) brightness(91%) contrast(95%);
+}
 /*=========================================================+
 | Footer Styles                                          |
 +=========================================================*/
