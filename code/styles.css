@@ -129,8 +129,16 @@ ul,ol,a{
     color: var(--white-color);
 }
 /*!Hero */
+/*=========================================================+
+| Hero                                   |
++=========================================================*/
+
 .Hero{
+    background-image: url(/images/imegesformain/backgroundimg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     width: 100%;
+    height: 600px;
     min-height: 450px;
     background-color: var(--navy-blue-color);
     display: flex;
@@ -358,6 +366,26 @@ ul,ol,a{
     margin-left: 120px;
     margin-bottom: 75px;
 }
+.social-list{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--iris-color);
+    border-radius: 50%;
+}
+.social-icons:hover,
+.social-icons:focus {
+    transition: 1s;
+    background-color: #31D0AA;
+}
 /*!footer end*/
 /*=========================================================+
 | Portfolio Styles                                      |
@@ -447,11 +475,4 @@ ul,ol,a{
 } 
 /*!button hover end*/
 /*!Team Member */
-.portfolio-item {   
-    width: 360px;
-}
-.display{
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
+
